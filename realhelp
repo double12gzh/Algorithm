@@ -11,7 +11,7 @@ git remote add origin https:/github.com/double12gzh/Algorithm.git
 1. 向远端传送文件
 
 git add <filename>
-git commeit -m "first_comment"
+git commit -m "first_comment"
 
 git push origin master
 
