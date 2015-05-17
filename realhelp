@@ -26,3 +26,6 @@ git status
 
 5. 在不同的branch 之间来回切换
 git checkout branchname
+
+6. 查看branch
+git branch
