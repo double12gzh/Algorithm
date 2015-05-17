@@ -1,4 +1,4 @@
-/* Funtion: binary_search
+/* Funtion: 	binary_search
  *
  * Description:
  * 		The algorithm for binary search.
