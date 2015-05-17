@@ -14,8 +14,9 @@ http://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84
 4) git checkout maser//修改完成后，切换到master分支
 5) git merge newbranch
 6) git branch -d newbranch
-7) git commit -a -m 'comments'
-8) git push origin master
+7) git add file
+8) git commit -a -m 'comments'
+9) git push origin master
 
 0. 添加远程仓库
 git remote add origin https:/github.com/double12gzh/Algorithm.git
