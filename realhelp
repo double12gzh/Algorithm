@@ -16,4 +16,10 @@ git push origin master
 
 
 
+3. 删除一个文件
+git rm <filename>
+git commit -m 'comments'
+git push origin master
 
+4. 查看status
+git status
