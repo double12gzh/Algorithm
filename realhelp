@@ -21,7 +21,8 @@ git push origin master
 
 git pull origin
 git merge origin/master
-#origin/master意思是要把origin中的master分支的内容merge到本地分支中.
+#origin/master意思是要把origin中的master分支修改的内容merge到本地分支中.
+#如果要把local分支修改的内容merge到本地的分支中则要使用origin/local.
 
 
 3. 删除一个文件
