@@ -8,6 +8,14 @@ http://blog.csdn.net/ithomer/article/details/7529022
 http://blog.csdn.net/ithomer/article/details/7529022
 http://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6
 //git分支合并与创建
+1) create a new branch: git checkout -b newbranch
+2) vi file
+3) git commit commit -a -m 'comments'
+4) git checkout maser//修改完成后，切换到master分支
+5) git merge newbranch
+6) git branch -d newbranch
+7) git commit -a -m 'comments'
+8) git push origin master
 
 0. 添加远程仓库
 git remote add origin https:/github.com/double12gzh/Algorithm.git
