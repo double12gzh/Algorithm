@@ -1,3 +1,0 @@
-# Algorithm
-
-For algorithm practice.
