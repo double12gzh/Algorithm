@@ -29,3 +29,9 @@ git checkout branchname
 
 6. 查看branch
 git branch
+
+7. 创建一个分支
+git checkout -b child_branch
+
+8. 删除一个分支
+git branch -d child_branch
