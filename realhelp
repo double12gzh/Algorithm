@@ -45,6 +45,9 @@ git checkout -b child_branch
 8. 删除一个分支
 git branch -d child_branch
 
+9. 查看远程的仓库
+git remote -v 
+
 
 http://www.cnblogs.com/wojilu/archive/2011/12/08/git-on-windows.html 
 (上面的网址与下面的内容无关)
