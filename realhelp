@@ -21,6 +21,8 @@ git push origin master
 
 git pull origin
 git merge origin/master
+#origin/master意思是要把master分支的修改更新到origin中，如果是 在local这个
+＃分支下修改的话，这里应该是origin/local
 
 
 3. 删除一个文件
