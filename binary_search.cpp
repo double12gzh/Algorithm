@@ -1,19 +1,19 @@
 /* Funtion: binary_search
-*
-* Description:
-* 		The algorithm for binary search.
-* 		the time complexity is O(logn).
-*
-* Input:
-* 		Arry -- an arrary
-* 		start -- the start of the array(depends on the user)
-* 		end -- end of the array(depends on the user)
-* 		key -- the aim value
-*
-* Return:
-* 		mid -- the position for the key in array
-* 		-1 -- FAILURE
-*/
+ *  
+ * Description:
+ * 		The algorithm for binary search.
+ * 		the time complexity is O(logn).
+ *
+ * Input:
+ * 		Arry -- an arrary
+ * 		start -- the start of the array(depends on the user)
+ * 		end -- end of the array(depends on the user)
+ * 		key -- the aim value
+ *
+ * Return:
+ * 		mid -- the position for the key in array
+ * 		-1 -- FAILURE
+ */
 
 #include <iostream>
 #include <string.h>
