@@ -44,3 +44,46 @@ git checkout -b child_branch
 
 8. 删除一个分支
 git branch -d child_branch
+
+
+http://www.cnblogs.com/wojilu/archive/2011/12/08/git-on-windows.html 
+(上面的网址与下面的内容无关)
+如何参与
+Druid是一个开放的项目，有很多非阿里巴巴的开发人员参与其中。你也可以成为其中一份子。这里介绍如何参与Druid开发。
+安装git相关软件 
+git有命令行和图形工具，强烈推荐你用命令行工具。
+eclipse的git插件 
+Eclispe自带的egit插件，在Eclipse 4.2之前的版本非常不稳定，不推荐使用，在Eclipse 4.2中，也偶发bug，仍然不推荐使用。
+git的官方站点 http://git-scm.com/ 
+官方站点有文档和命令行工具下载，需要翻墙，自己想办法解决。
+Fork
+第1步 Fork自己的仓库
+从AlibabaTech/druid项目中fork一个你自己的仓库
+druid的官方仓库是： https://github.com/AlibabaTech/druid
+fork之后，你的个人仓库是： https://github.com/my_account/druid 
+开发并且提交代码
+clone 首先要从github上下载代码到本地，你需要执行如下命令：
+git clone https://github.com/my_account/druid.git 
+cd druid
+commit 当你修改代码之后，需要commit到本地仓库，执行的命令如下：
+git add --all
+git commit -a -m '修改原因，相关说明信息'
+建议你的不同的修改，分别做不同的commit。
+push 执行git commit之后，只是提交到了本机的仓库，而不是github上你账号的仓库。你需要执行push命令，把commit提交到服务器。
+git push
+上游仓库
+添加远程仓库 
+git remote add upstream https://github.com/AlibabaTech/druid.git 
+更新远程代码：
+git pull upstream
+将远程代码合并到本地仓库
+git merge upstream/master
+将代码提交自己的仓库
+git push
+保存密码
+每次push都需要输入密码很麻烦，你可以执行如下命令保存密码：
+git config --global credential.helper cache
+git config credential.helper 'cache --timeout=360000'
+pull request
+登陆github，在你自己的账号中的仓库中点击pull request，就会要求你输入pull request的原因和详细信息，你确认之后。Druid的owner就会收到并且审查，审查通过就会合并到主干上。
+
