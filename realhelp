@@ -1,0 +1,16 @@
+github 使用方法
+
+1. 向远端传送文件
+
+git add <filename>
+git commeit -m "first_comment"
+
+git push origin master
+
+#master可以是任何的想推送的分支
+
+2. 从远端和到文件
+
+
+
+
