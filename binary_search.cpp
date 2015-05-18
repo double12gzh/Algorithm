@@ -5,10 +5,10 @@
  * 		the time complexity is O(logn).
  *
  * Input:
- * 		Arry -- an arrary
- * 		start -- the start of the array(depends on the user)
- * 		end -- end of the array(depends on the user)
- * 		key -- the aim value
+ * 		Arry 	-- an arrary
+ * 		start 	-- the start of the array(depends on the user)
+ * 		end 	-- end of the array(depends on the user)
+ * 		key 	-- the aim value
  *
  * Return:
  * 		mid -- the position for the key in array
