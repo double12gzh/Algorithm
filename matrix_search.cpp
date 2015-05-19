@@ -1,7 +1,17 @@
-#include <iostream>
-#include <vector>
-
-using namespace std;
+/* Funtion: 	matrix_search
+ *  
+ * Description:
+ * 		Can be used to anaylize the 杨氏三角.
+ * 			
+ *
+ * Input:
+ * 		matrix -- 这是一个二维数组
+ * 		target -- the aimed value
+ *
+ * Return:
+ * 		
+ * 		
+ */
 
 bool matrix_search(vector<vector<int> > &matrix, int target)
 {
