@@ -3,7 +3,8 @@
 using namespace std;
 
 template<typename T>
-void bubble(T &a, T &b)
+int bubble(T &a, T &b)
 {
 
+	return 0;
 }
