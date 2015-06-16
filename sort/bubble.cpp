@@ -17,7 +17,7 @@ void bubble(int array[], int left, int right)
 
 	int i = left;
 	int j = right;
-	bool b_Flag = false;
+	bool b_Flag = false;	//improve for bubble
 
 	for (; i<right-1; i++)
 	{
