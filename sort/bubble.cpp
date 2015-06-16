@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void bubble()
+int bubble()
 {
-  
+	return 0;  
 }
