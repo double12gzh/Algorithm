@@ -11,7 +11,7 @@ void Swap(T &a, T &b)
 }
 
 // The improved bubble sort
-void bubble(int array[], int left, int right)
+void bubble(T array[], int left, int right)
 {
 	assert(left >= 0 && right >= left);
 
@@ -21,6 +21,8 @@ void bubble(int array[], int left, int right)
 
 	for (; i<right-1; i++)
 	{
+		b_Flag = false;
+
 		for (; j>i; j--)
 		{
 			if (array[j] < array[j-1])
@@ -30,6 +32,8 @@ void bubble(int array[], int left, int right)
 			}
 		}
 		
+		// the array is in order and there is no need to
+		// change.
 		if (b_Flag == false)
 			break;
 	}
