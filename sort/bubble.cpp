@@ -11,9 +11,8 @@ void Swap(T &a, T &b)
 }
 
 // The improved bubble sort
-void bubble(T array[], int left, int right)
+void bubble(int array[], int left, int right)
 {
-	assert(left >= 0 && right >= left);
 
 	int i = left;
 	int j = right;
@@ -37,4 +36,17 @@ void bubble(T array[], int left, int right)
 		if (b_Flag == false)
 			break;
 	}
+}
+
+int main()
+{
+	int array[] = {4,2,6,9,0,23};
+	int size_temp = sizeof(array)/sizeof(int);
+
+	bubble(array, 0, size_temp-1);
+
+	for (int i=0; i<size_temp; i++)
+		cout<<"array[i] = "<<array[i]<<endl;
+
+	return 0;
 }
