@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-const BucketCount = 16
+const BucketCount = 32
 
 type KV struct {
 	Key   string
@@ -41,7 +41,7 @@ func (l *LinkNode) AddNode(data KV) int {
 
 func (h *HashMap) CreateLink() *LinkNode {
 	node := &LinkNode{
-		Data: KV{Key:   "", Value: ""},
+		Data:     KV{Key: "", Value: ""},
 		NextNode: nil,
 	}
 
@@ -60,7 +60,7 @@ func (h *HashMap) CreateHashMap() *HashMap {
 
 func (h *HashMap) HashCode(key string) int {
 	sum := 0
-	
+
 	for i := 0; i < len(key); i++ {
 		sum += int(key[i])
 	}
@@ -82,22 +82,29 @@ func (h *HashMap) AddKeyValue(key, value string) {
 	}
 }
 
-func (h *HashMap) GetValueByKey(key string) string {
+func (h *HashMap) GetValueByKey(key string) (string, bool) {
 	mapIndex := h.HashCode(key)
 	var value string
+	var success bool
 
 	head := h.Buckets[mapIndex]
 	for {
 		if head.Data.Key == key {
 			value = head.Data.Value
-
+			success = true
 			break
 		} else {
-			head = head.NextNode
+			if head.NextNode != nil {
+				head = head.NextNode
+			} else {
+				value, success = "", false
+				break
+			}
+
 		}
 	}
 
-	return value
+	return value, success
 }
 
 func main() {
@@ -112,5 +119,10 @@ func main() {
 	myMap.AddKeyValue("sun", "4")
 	myMap.AddKeyValue("wang", "3")
 
-	fmt.Println(myMap.GetValueByKey("sun"))
+	value, success := myMap.GetValueByKey("ssun")
+	if success {
+		fmt.Println(value)
+	} else {
+		fmt.Printf("Invalid key offered")
+	}
 }
