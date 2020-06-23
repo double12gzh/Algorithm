@@ -119,8 +119,7 @@ func main() {
 	myMap.AddKeyValue("sun", "4")
 	myMap.AddKeyValue("wang", "3")
 
-	value, success := myMap.GetValueByKey("ssun")
-	if success {
+	if value, success := myMap.GetValueByKey("ssun"); success {
 		fmt.Println(value)
 	} else {
 		fmt.Printf("Invalid key offered")
